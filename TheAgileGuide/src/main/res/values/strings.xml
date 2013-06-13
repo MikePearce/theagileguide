@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" >The Agile Guide</string>
+    <string name="action_settings" >Settings</string>
+    <string name="hello_world" >Hello world!</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_start">Start</string>
+    <string name="title_activity_display_message">My Message</string>
+
+    <string name="rss_url">The Agile Guide RSS URL</string>
+    <string name="save_settings">Save</string>
+
+    <string name="intro_title">Agile Guide Intro</string>
+    <string name="intro_text">
+        Hello and welcome to the jungle. Leggings eiusmod pour-over helvetica. PBR accusamus twee adipisicing. Put a bird on it occupy Carles authentic retro. Aute anim labore butcher, laboris messenger bag PBR next level. Whatever helvetica selfies, labore tote bag retro umami odio nihil craft beer proident High Life dolor occupy consequat. Street art consequat cray master cleanse kale chips, fashion axe meggings 8-bit beard. Commodo bitters Wes Anderson enim.
+    </string>
+
+</resources>
