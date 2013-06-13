@@ -18,4 +18,10 @@
         Hello and welcome to the jungle. Leggings eiusmod pour-over helvetica. PBR accusamus twee adipisicing. Put a bird on it occupy Carles authentic retro. Aute anim labore butcher, laboris messenger bag PBR next level. Whatever helvetica selfies, labore tote bag retro umami odio nihil craft beer proident High Life dolor occupy consequat. Street art consequat cray master cleanse kale chips, fashion axe meggings 8-bit beard. Commodo bitters Wes Anderson enim.
     </string>
 
+    <string name="title_manifesto">The Agile Manifesto</string>
+
+    <string name="attributions">
+        <a href="http://thenounproject.com/noun/arrow/#icon-No5440" target="_blank">Arrow</a> designed by <a href="http://thenounproject.com/jamison" target="_blank">Jamison Wieser</a> from The Noun Project
+    </string>
+
 </resources>

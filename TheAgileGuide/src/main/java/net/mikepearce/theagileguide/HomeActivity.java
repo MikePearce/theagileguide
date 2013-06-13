@@ -13,8 +13,8 @@ public class HomeActivity extends Activity {
         setContentView(R.layout.activity_home);
 
         // Set body font
-        TextView tv2 = (TextView) findViewById(R.id.textView);
-        AndroidUtils.setRobotoFont(this, tv2, "Bold");
+        TextView tv = (TextView) getWindow().getDecorView().findViewById(android.R.id.content);
+        AndroidUtils.setRobotoFont(this, tv, "Bold");
     }
 
 

@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              tools:context=".MainActivity">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                  xmlns:tools="http://schemas.android.com/tools"
-                  android:layout_width="fill_parent"
-                  android:layout_height="fill_parent"
-                  android:gravity="center"
-                  android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="60sp"
+            android:text="@string/intro_title_center"
+            android:id="@+id/intro_title_center"
+            android:padding="10dp"
+            />
 
         <TextView
                 android:layout_width="wrap_content"
@@ -19,28 +21,24 @@
                 android:textSize="30sp"
                 android:text="@string/intro_title_top"
                 android:id="@+id/intro_title_top"
-                android:layout_gravity="center_horizontal|top"
-                android:padding="10dp"/>
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textSize="60sp"
-                android:text="@string/intro_title_center"
-                android:id="@+id/intro_title_center"
-                android:layout_gravity="center_horizontal|top"
-                android:padding="10dp"/>
-
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="@string/intro_title_start"
-                android:id="@+id/intro_title_start"
-                android:layout_gravity="center_horizontal|top"
                 android:padding="10dp"
-                android:clickable="true"
-                android:onClick="startGuide"/>
-    </LinearLayout>
+                android:layout_above="@+id/intro_title_center"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignLeft="@+id/intro_title_center"/>
 
-</LinearLayout>
+    <Button
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/intro_title_start"
+            android:id="@+id/intro_title_start"
+            android:layout_below="@+id/intro_title_center"
+            android:layout_alignRight="@+id/intro_title_center"
+            android:drawableRight="@drawable/next3"
+            android:onClick="startGuide"
+            />
+
+</RelativeLayout>
