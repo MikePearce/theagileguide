@@ -1,23 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/intro_title"
-            android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal|top"
-            android:padding="10dp"
-            android:focusableInTouchMode="false"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:layout_alignParentLeft="true"
+                  android:layout_marginLeft="0dp"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginTop="0dp">
 
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/button_start"
-            android:onClick="startGuide" />
-</LinearLayout>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intro_title_top"
+                    android:id="@+id/intro_title_top"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="223dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="400dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/intro_title_center"
+                    android:id="@+id/intro_title_center"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="116dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="473dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intro_title_top"
+                    android:id="@+id/intro_title_start"
+                    android:padding="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="223dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="565dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
