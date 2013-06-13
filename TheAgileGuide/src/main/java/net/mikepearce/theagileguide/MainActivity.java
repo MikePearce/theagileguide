@@ -15,8 +15,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         // Set title font
-        TextView tv = (TextView) findViewById(R.id.textView2);
+        TextView tv = (TextView) findViewById(R.id.intro_title_top);
         AndroidUtils.setRobotoFont(this, tv, "Thin");
+
+        TextView tv2 = (TextView) findViewById(R.id.intro_title_center);
+        AndroidUtils.setRobotoFont(this, tv2, "Regular");
+
+        TextView tv3 = (TextView) findViewById(R.id.intro_title_start);
+        AndroidUtils.setRobotoFont(this, tv3, "ThinItalic");
     }
 
     public void startGuide(View view) {
