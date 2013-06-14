@@ -1,8 +1,11 @@
 package net.mikepearce.theagileguide;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class HomeActivity extends Activity {
@@ -12,11 +15,31 @@ public class HomeActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        // Set body font
-        TextView tv = (TextView) getWindow().getDecorView().findViewById(android.R.id.content);
-        AndroidUtils.setRobotoFont(this, tv, "Bold");
+        // Set body font (for whole page)
+        AndroidUtils.setRobotoFont(this, (ViewGroup) this.getWindow().getDecorView(), "Thin");
+
+        TextView tv = (TextView) findViewById(R.id.title_manifesto);
+        AndroidUtils.setRobotoFont(this, tv, "Thin");
+
+        TextView tv2 = (TextView) findViewById(R.id.title_manifesto_the);
+        AndroidUtils.setRobotoFont(this, tv2, "ThinItalic");
+
     }
 
+    public void viewManifesto(View view) {
+        Intent intent = new Intent(this, ManifestoActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewScrum(View view) {
+        Intent intent = new Intent(this, ScrumActivity.class);
+        startActivity(intent);
+    }
+
+    public void viewKanban(View view) {
+        Intent intent = new Intent(this, KanbanActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

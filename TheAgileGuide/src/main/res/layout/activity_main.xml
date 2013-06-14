@@ -21,12 +21,13 @@
                 android:textSize="30sp"
                 android:text="@string/intro_title_top"
                 android:id="@+id/intro_title_top"
-                android:padding="10dp"
                 android:layout_above="@+id/intro_title_center"
                 android:layout_alignParentBottom="false"
                 android:layout_alignParentRight="false"
                 android:layout_alignParentEnd="false"
-                android:layout_alignLeft="@+id/intro_title_center"/>
+                android:layout_alignLeft="@+id/intro_title_center"
+                android:padding="10dp"
+                android:layout_marginBottom="-30dp"/>
 
     <Button
             android:background="?android:attr/selectableItemBackground"
@@ -39,6 +40,7 @@
             android:layout_alignRight="@+id/intro_title_center"
             android:drawableRight="@drawable/next3"
             android:onClick="startGuide"
-            />
+            android:padding="10dp"
+            android:layout_marginTop="-10dp"/>
 
 </RelativeLayout>

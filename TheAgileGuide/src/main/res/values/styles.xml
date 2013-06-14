@@ -13,6 +13,17 @@
         -->
     </style>
 
+    <style name="SectionTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="BodyTextSmall">
+        <item name="android:textSize">15sp</item>
+    </style>
+
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->

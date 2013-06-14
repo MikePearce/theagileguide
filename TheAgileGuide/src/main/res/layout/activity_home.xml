@@ -1,17 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/title_manifesto"
-            android:id="@+id/textView"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"/>
+            android:layout_marginTop="40dp"
+            android:id="@+id/linearLayout">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/intro_title_top"
+                android:id="@+id/title_manifesto_the"
+                android:textSize="20sp"/>
+
+        <TextView
+                style="@style/SectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_manifesto"
+                android:id="@+id/title_manifesto"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="-10dp"
+                android:onClick="viewManifesto"
+                android:clickable="true"/>
+
+        <TextView
+                style="@style/BodyTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/desc_manifest"
+                android:id="@+id/manifesto_desc"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#0f050a"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout3">
+
+        <TextView
+                style="@style/SectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_scrum"
+                android:id="@+id/title_scrum"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="viewScrum"/>
+
+        <TextView
+                style="@style/BodyTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/desc_scrum"
+                android:id="@+id/textView"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout6"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp">
+
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="#0a0b0f"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout6"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearLayout4">
+
+        <TextView
+                style="@style/SectionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/title_kanban"
+                android:id="@+id/title_kanban"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:onClick="viewKanban"/>
+        <TextView
+                style="@style/BodyTextSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/desc_kanban"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/title_kanban"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+    </LinearLayout>
+
+
+
 </RelativeLayout>
