@@ -8,12 +8,12 @@
 
     <fragment
             android:id="@+id/fragment_content"
-            android:name="net.mikepearce.theagileguide.fragment.manifestofragment"
+            android:name="net.mikepearce.theagileguide.fragment.shortprinciplefragment"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            tools:layout="@layout/fragment_manifesto">
+            tools:layout="@layout/fragment_shortprinciples">
 
-        <!-- Preview: layout=@layout/fragment_manifesto -->
+        <!-- Preview: layout=@layout/fragment_shortprinciples -->
     </fragment>
 
 </LinearLayout>

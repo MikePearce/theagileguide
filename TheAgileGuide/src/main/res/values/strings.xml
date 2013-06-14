@@ -1,36 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name" >The Agile Guide</string>
-    <string name="action_settings" >Settings</string>
-    <string name="hello_world" >Hello world!</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_start">Start</string>
-    <string name="title_activity_display_message">My Message</string>
+    <!-- Global Stuff -->
+        <string name="app_name" >Agile Guide</string>
+        <string name="action_settings" >Settings</string>
+    <!-- // Global Stuff -->
 
-    <string name="rss_url">The Agile Guide RSS URL</string>
-    <string name="save_settings">Save</string>
+    <!-- Some Frequent Words -->
+        <string name="button_start">Start</string>
+        <string name="intro_title_top">The</string>
+        <string name="intro_title_center">Agile Guide</string>
+        <string name="intro_title_start">start</string>
+        <string name="toast_you_just_clicked_a_fragment">You just clicked a fragment!</string>
+    <!-- // Some Frequent Words -->
 
-    <string name="intro_title_top">The</string>
-    <string name="intro_title_center">Agile Guide</string>
-    <string name="intro_title_start">start</string>
-    <string name="intro_text">
-        Hello and welcome to the jungle. Leggings eiusmod pour-over helvetica. PBR accusamus twee adipisicing. Put a bird on it occupy Carles authentic retro. Aute anim labore butcher, laboris messenger bag PBR next level. Whatever helvetica selfies, labore tote bag retro umami odio nihil craft beer proident High Life dolor occupy consequat. Street art consequat cray master cleanse kale chips, fashion axe meggings 8-bit beard. Commodo bitters Wes Anderson enim.
-    </string>
+    <!-- PAGE TITLE STUFF -->
+        <string name="title_manifesto">Manifesto</string>
+        <string name="title_scrum">Scrum</string>
+        <string name="title_kanban">Kanban</string>
+        <string name="desc_manifest">The four core values and 12 principles</string>
+        <string name="desc_scrum">The fundamental rules of scrum, helping you surface organisational dysfunction</string>
+        <string name="desc_kanban">Make your process transparent, discover bottlenecks and improve cycle-time</string>
+    <!-- // PAGE TITLE STUFF -->
 
-    <string name="title_manifesto">Manifesto</string>
-    <string name="title_scrum">Scrum</string>
-    <string name="title_kanban">Kanban</string>
-    <string name="desc_manifest">The four core values and 12 principles</string>
-    <string name="desc_scrum">The fundamental rules of scrum, helping you surface organisational dysfunction</string>
-    <string name="desc_kanban">Make your process transparent, discover bottlenecks and improve cycle-time</string>
-    <string name="manifesto_text_values"><b>Individuals and interactions</b>\nover\nprocesses and tools\n\n<b>Working software</b>\nover\ncomprehensive documentation\n\n<b>Customer collaboration</b>\nover\ncontract negotiation\n\n<b>Responding to change</b>\nover\nfollowing a plan</string>
-    <string name="manifesto_text_blurb">We are uncovering better ways of developing software by doing it and helping others do it.\n\nThrough this work we have come to value:</string>
-    <string name="manifesto_text_blurbbottom">That is, while there is value in the items on the right, we value the items on the left more.</string>
+    <!-- MANIFESTO STUFF -->
+        <string name="manifesto_text_blurb">We are uncovering better ways of developing software by doing it and helping others do it.\n\nThrough this work we have come to value:</string>
+        <string name="manifesto_text_blurbbottom">That is, while there is value in the items on the right, we value the items on the left more.</string>
 
+        <!-- Manifesto Values -->
+        <string name="manifesto_value_ind"><b>Individuals and interactions</b>\nover\nprocesses and tools</string>
+        <string name="manifesto_value_wor"><b>Working software</b>\nover\ncomprehensive documentation</string>
+        <string name="manifesto_value_cus"><b>Customer collaboration</b>\nover\ncontract negotiation</string>
+        <string name="manifesto_value_res"><b>Responding to change</b>\nover\nfollowing a plan</string>
+        <!-- //Manifesto Values -->
+
+        <!-- Manifesto Principles -->
+        <string name="manifesto_princ_1">Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</string>
+            <string name="manifesto_princ_1_short">Delight the customer</string>
+        <string name="manifesto_princ_2">Welcome changing requirements, even late in development. Agile processes harness change for the customers competitive advantage.</string>
+            <string name="manifesto_princ_2_short">Seek change</string>
+        <string name="manifesto_princ_3">Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</string>
+            <string name="manifesto_princ_3_short">Deliver frequently</string>
+        <string name="manifesto_princ_4">Business people and developers must work together daily throughout the project.</string>
+            <string name="manifesto_princ_4_short">Work as a team</string>
+        <string name="manifesto_princ_5">Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.</string>
+            <string name="manifesto_princ_5_short">Motivate people</string>
+        <string name="manifesto_princ_6">The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</string>
+            <string name="manifesto_princ_6_short">Talk face-to-face</string>
+        <string name="manifesto_princ_7">Working software is the primary measure of progress.</string>
+            <string name="manifesto_princ_7_short">Measure value delivered</string>
+        <string name="manifesto_princ_8">Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</string>
+            <string name="manifesto_princ_8_short">Maintain pace</string>
+        <string name="manifesto_princ_9">Continuous attention to technical excellence and good design enhances agility.</string>
+            <string name="manifesto_princ_9_short">Be excellent</string>
+        <string name="manifesto_princ_10">Simplicity - the art of maximizing the amount of work not done - is essential.</string>
+            <string name="manifesto_princ_10_short">K.I.S.S</string>
+        <string name="manifesto_princ_11">The best architectures, requirements, and designs emerge from self-organizing teams.</string>
+            <string name="manifesto_princ_11_short">Evolve design</string>
+        <string name="manifesto_princ_12">At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</string>
+            <string name="manifesto_princ_12_short">Reflect Regularly</string>
+        <!-- //Manifesto Principles -->
+    <!-- //MANIFESTO STUFF -->
+
+
+
+    <!-- Attributions, about and thanks -->
     <string name="attributions">
         <a href="http://thenounproject.com/noun/arrow/#icon-No5440" target="_blank">Arrow</a> designed by <a href="http://thenounproject.com/jamison" target="_blank">Jamison Wieser</a> from The Noun Project
     </string>
+    <!-- // Attributions, about and thanks -->
 
 
 </resources>

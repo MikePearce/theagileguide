@@ -12,7 +12,7 @@ public class ManifestoActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manifesto);
+        setContentView(R.layout.fragment_manifesto);
 
         // Set body font (for whole page)
         AndroidUtils.setRobotoFont(this, (ViewGroup) this.getWindow().getDecorView(), "Thin");
