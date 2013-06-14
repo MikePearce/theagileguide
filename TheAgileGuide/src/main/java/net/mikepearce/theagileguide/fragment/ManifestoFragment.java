@@ -18,27 +18,7 @@ public class ManifestoFragment extends Fragment {
         // ID for the layout file, the parent view that will hold the layout, and an option to add the inflated
         // view to the parent. This should always be false or an exception will be thrown. Android will add
         // the view to the parent when necessary.
-        View view = inflater.inflate(R.layout.activity_manifesto, container, false);
-
-//        // This is how you access your layout views. Notice how we call the findViewById() method
-//        // on our View directly. There is no method called findViewById() defined on Fragments like
-//        // there is in an Activity.
-//        Button button = (Button) view.findViewById(R.id.toast_button);
-//
-//        // A simple OnClickListener for our button. You can see here how a Fragment can encapsulate
-//        // logic and views to build out re-usable Activity components.
-//        button.setOnClickListener(new OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                Activity activity = getActivity();
-//
-//                if (activity != null) {
-//                    Toast.makeText(activity, R.string.toast_you_just_clicked_a_fragment, Toast.LENGTH_LONG).show();
-//                }
-//            }
-//
-//        });
+        View view = inflater.inflate(R.layout.fragment_manifesto, container, false);
 
         return view;
     }

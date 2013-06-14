@@ -18,7 +18,7 @@ public class ShortprincipleFragment extends Fragment {
         // ID for the layout file, the parent view that will hold the layout, and an option to add the inflated
         // view to the parent. This should always be false or an exception will be thrown. Android will add
         // the view to the parent when necessary.
-        View view = inflater.inflate(R.layout.activity_principles, container, false);
+        View view = inflater.inflate(R.layout.fragment_shortprinciples, container, false);
 
 //        // This is how you access your layout views. Notice how we call the findViewById() method
 //        // on our View directly. There is no method called findViewById() defined on Fragments like

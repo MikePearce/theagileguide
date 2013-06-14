@@ -7,13 +7,15 @@
               android:layout_height="match_parent">
 
     <fragment
-            android:id="@+id/fragment_content"
-            android:name="net.mikepearce.theagileguide.fragment.manifestofragment"
+            android:id="@+id/fragment_tab"
+            android:name="net.mikepearce.theagileguide.fragment.TabFragment"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            tools:layout="@layout/fragment_manifesto">
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_tabs"/>
 
-        <!-- Preview: layout=@layout/fragment_manifesto -->
-    </fragment>
+    <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
 
 </LinearLayout>
