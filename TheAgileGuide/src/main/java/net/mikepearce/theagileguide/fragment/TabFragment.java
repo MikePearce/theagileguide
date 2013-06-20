@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import net.mikepearce.theagileguide.R;
+import net.mikepearce.theagileguide.utils.RobotoTextView;
 
 public class TabFragment extends Fragment {
 
@@ -25,12 +25,13 @@ public class TabFragment extends Fragment {
         // Grab the tab buttons from the layout and attach event handlers. The code just uses standard
         // buttons for the tab widgets. These are bad tab widgets, design something better, this is just
         // to keep the code simple.
-        Button listViewTab = (Button) view.findViewById(R.id.value_view_tab);
-        Button gridViewTab = (Button) view.findViewById(R.id.principle_view_tab);
+        final RobotoTextView listViewTab = (RobotoTextView) view.findViewById(R.id.value_view_tab);
+        final RobotoTextView gridViewTab = (RobotoTextView) view.findViewById(R.id.principle_view_tab);
 
         listViewTab.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
+                resetBackgrounds(gridViewTab, listViewTab);
                 // Switch the tab content to display the list view.
                 gotoValueView();
             }
@@ -39,12 +40,19 @@ public class TabFragment extends Fragment {
         gridViewTab.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                resetBackgrounds(listViewTab, gridViewTab);
                 // Switch the tab content to display the grid view.
                 gotoPrincipleView();
             }
         });
 
         return view;
+    }
+
+
+    public void resetBackgrounds(View off, View on) {
+        off.setBackgroundResource(0);
+        on.setBackgroundResource(R.color.grey);
     }
 
     public void gotoValueView() {
@@ -65,7 +73,7 @@ public class TabFragment extends Fragment {
                 // currently inside R.id.fragment_content and add the new Fragment
                 // in its place.
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.fragment_content, new ManifestoFragment());
+                ft.replace(R.id.fragment_content, new ListManifestoFragment());
                 ft.commit();
             }
         }
@@ -82,7 +90,7 @@ public class TabFragment extends Fragment {
 
             if (fm != null) {
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.fragment_content, new ShortprincipleFragment());
+                ft.replace(R.id.fragment_content, new ListShortprincipleFragment());
                 ft.commit();
             }
         }

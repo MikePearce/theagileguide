@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MANIFESTO STUFF -->
+    <string name="manifesto_text_blurb">We are uncovering better ways of developing software by doing it and helping others do it.\n\nThrough this work we have come to value:</string>
+    <string name="manifesto_text_blurbbottom">That is, while there is value in the items on the right, we value the items on the left more.</string>
+
+    <!-- Manifesto Values -->
+    <string-array name="manifesto_values">
+        <item>@string/manifesto_value_ind</item>
+        <item>@string/manifesto_value_wor</item>
+        <item>@string/manifesto_value_cus</item>
+        <item>@string/manifesto_value_res</item>
+    </string-array>
+
+    <string-array name="desc_values">
+        <item>Description of value one</item>
+        <item>Description of value two</item>
+        <item>Description of value three</item>
+        <item>Description of value four</item>
+    </string-array>
+
+    <string name="manifesto_value_ind">&lt;b&gt;Individuals and interactions&lt;/b&gt;&lt;br /&gt;over&lt;br /&gt;processes and tools</string>
+    <string name="manifesto_value_wor">&lt;b&gt;Working software&lt;/b&gt;&lt;br /&gt;over&lt;br /&gt;comprehensive documentation</string>
+    <string name="manifesto_value_cus">&lt;b&gt;Customer collaboration&lt;/b&gt;&lt;br /&gt;over&lt;br /&gt;contract negotiation</string>
+    <string name="manifesto_value_res">&lt;b&gt;Responding to change&lt;/b&gt;&lt;br /&gt;over&lt;br /&gt;following a plan</string>
+    <!-- //Manifesto Values -->
+
+    <!-- Manifesto Principles -->
+    <string-array name="short_principles">
+        <item>Delight the customer</item>
+        <item>Seek change</item>
+        <item>Deliver frequently</item>
+        <item>Work as a team</item>
+        <item>Motivate people</item>
+        <item>Talk face-to-face</item>
+        <item>Measure value delivered</item>
+        <item>Maintain pace</item>
+        <item>Be excellent</item>
+        <item>K.I.S.S</item>
+        <item>Evolve design</item>
+        <item>Reflect Regularly</item>
+    </string-array>
+    <string-array name="long_principles">
+        <item>Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.</item>
+        <item>Welcome changing requirements, even late in development. Agile processes harness change for the customers competitive advantage.</item>
+        <item>Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.</item>
+        <item>Business people and developers must work together daily throughout the project.</item>
+        <item>Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.</item>
+        <item>The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.</item>
+        <item>Working software is the primary measure of progress.</item>
+        <item>Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.</item>
+        <item>Continuous attention to technical excellence and good design enhances agility.</item>
+        <item>Simplicity - the art of maximizing the amount of work not done - is essential.</item>
+        <item>The best architectures, requirements, and designs emerge from self-organizing teams.</item>
+        <item>At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.</item>
+    </string-array>
+    <string-array name="desc_principles">
+        <item>Description of principle one</item>
+        <item>Description of principle two</item>
+        <item>Description of principle three</item>
+        <item>Description of principle four</item>
+        <item>Description of principle five</item>
+        <item>Description of principle six</item>
+        <item>Description of principle seven</item>
+        <item>Description of principle eight</item>
+        <item>Description of principle nine</item>
+        <item>Description of principle ten</item>
+        <item>Description of principle eleven</item>
+        <item>Description of principle twelve</item>
+    </string-array>
+    <!-- //Manifesto Principles -->
+    <!-- //MANIFESTO STUFF -->
+</resources>

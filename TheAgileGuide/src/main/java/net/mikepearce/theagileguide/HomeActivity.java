@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import net.mikepearce.theagileguide.utils.AndroidUtils;
+
 public class HomeActivity extends Activity {
 
     @Override
@@ -32,12 +34,12 @@ public class HomeActivity extends Activity {
     }
 
     public void viewScrum(View view) {
-        Intent intent = new Intent(this, ScrumActivity.class);
+        Intent intent = new Intent(this, ComingsoonActivity.class);
         startActivity(intent);
     }
 
     public void viewKanban(View view) {
-        Intent intent = new Intent(this, KanbanActivity.class);
+        Intent intent = new Intent(this, ComingsoonActivity.class);
         startActivity(intent);
     }
 

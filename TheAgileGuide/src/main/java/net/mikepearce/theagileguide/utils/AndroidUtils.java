@@ -1,4 +1,4 @@
-package net.mikepearce.theagileguide;
+package net.mikepearce.theagileguide.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;

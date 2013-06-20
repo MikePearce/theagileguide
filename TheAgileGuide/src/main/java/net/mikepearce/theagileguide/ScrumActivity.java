@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 
+import net.mikepearce.theagileguide.utils.AndroidUtils;
+
 public class ScrumActivity extends Activity {
 
     @Override

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:theagileguide="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.mikepearce.theagileguide.utils.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="[principle full]"
+            android:id="@+id/value_full"
+            theagileguide:typeface="roboto_regular"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+    <net.mikepearce.theagileguide.utils.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[principle description]"
+            android:id="@+id/value_desc"
+            theagileguide:typeface="roboto_thin"
+            android:layout_below="@+id/principle_full"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+</LinearLayout>

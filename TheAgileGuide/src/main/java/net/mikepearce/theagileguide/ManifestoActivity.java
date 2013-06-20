@@ -4,9 +4,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.view.Menu;
-import android.view.ViewGroup;
 
 import net.mikepearce.theagileguide.fragment.TabFragment;
+import net.mikepearce.theagileguide.utils.RobotoTextView;
 
 import static net.mikepearce.theagileguide.R.menu.main;
 
@@ -16,21 +16,16 @@ public class ManifestoActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Notice how there is not very much code in the Activity. All the business logic for
-        // rendering tab content and even the logic for switching between tabs has been pushed
-        // into the Fragments. This is one example of how to organize your Activities with Fragments.
-        // This benefit of this approach is that the Activity can be reorganized using layouts
-        // for different devices and screen resolutions.
         setContentView(R.layout.activity_manifesto);
-
-        // Set body font (for whole page)
-        AndroidUtils.setRobotoFont(this, (ViewGroup) this.getWindow().getDecorView(), "Thin");
-
         // Grab the instance of TabFragment that was included with the layout and have it
         // launch the initial tab.
         FragmentManager fm = getSupportFragmentManager();
         TabFragment tabFragment = (TabFragment) fm.findFragmentById(R.id.fragment_tab);
         tabFragment.gotoValueView();
+
+        // Set the default highlight
+        RobotoTextView v = (RobotoTextView) this.findViewById(R.id.value_view_tab);
+        v.setBackgroundResource(R.color.grey);
     }
 
     @Override

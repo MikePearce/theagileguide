@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
+import net.mikepearce.theagileguide.utils.AndroidUtils;
+
 public class MainActivity extends Activity {
 
     @Override
